@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.app__ingbank {
+    width: 369px;
+    background-color: #231f20;
+    height: 800px;
+    position: relative;
+}
+
+.ingbank__header {
+    width: 369px;
+    height: 78px;
+    background-color: #2c2a2b;
+}
+
+.ingbattery {
+    padding: 11px 24px 0;
+}
+
+.ing__timeheader {
+    color: #fff;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.ingsubheader {
+    padding: 21px 11px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ing__content {
+    padding-top: 21px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ing__bottom {
+    padding-top: 175px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ing__phone {
+    width: 133px;
+    height: 5px;
+    background-color: #fff;
+    margin-bottom: 7px;
+    border-radius: 20px;
+}
+
+.ing__menu {}
+
+.ing__menu {
+    display: flex;
+    padding: 11px 0px 20px 0px;
+    width: 325px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.menu__title {
+    color: #d7d5d6;
+    font-size: 9.3px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ing__menu>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.uncategorised {
+    padding-top: 15px;
+    color: #d7d5d6;
+    font-size: 13.7px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.amount {
+    color: #fff;
+    font-size: 28px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.transfer__customer {
+    color: #d7d5d6;
+    font-size: 13.7px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text__middle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 21px;
+}
+
+.text__middle>span {
+    color: #d7d5d6;
+    font-size: 13px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+}
+
+.receipt__no {
+    padding-top: 10px;
+    color: #d7d5d6;
+    font-size: 11.9px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grey {
+    color: #d7d5d6;
+    font-size: 12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.uncat__content {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 5px;
+}
+
+
+
+
+
+.uncat__left {
+    color: #d7d5d6;
+    font-size: 12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.uncat__right {
+    color: #d7d5d6;
+    font-size: 13px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap:9px
+}
+
+.bar {
+ 
+}
+
+/* syling the bottom of tht ing  banmck  */
+
+.ing__help {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 368px;
+    height: 64px;
+    border-radius: 3px;
+    background: #363435;
+}
+
+.help__border {
+    margin-top: 10px;
+    width: 35px;
+    height: 3px;
+    border-radius: 2px;
+    background: #4D4B4C;
+}
+
+.help__text{ 
+    display: flex;
+    justify-content: space-between;
+    width: 339px;
+    
+}
+
+.help__{ 
+    color: #D7D5D6;
+font-size: 13.5px;
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
