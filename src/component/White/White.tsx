@@ -2,11 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./white.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
-import { IoIosWifi } from "react-icons/io";
+import { IoIosWifi, IoLogoGoogle } from "react-icons/io";
 function White(props) {
   const [first, setfirst] = useState(Number.generateRandom4Number());
 
   const [second, setsecond] = useState(Number.generateRandom4Number());
+
+
+//   IoLogoGoogle
+
+
   useEffect(() => {
     first;
   }, [first]);
