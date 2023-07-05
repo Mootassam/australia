@@ -5,6 +5,8 @@ import Sidebar from "./layout/sidebar/Sidebar";
 import Screenshot from "./shared/Screenshot";
 import { DrawingApp } from "./shared/DrawingApp";
 import Ingbank from "./component/Ingbank/Ingbank";
+import Green from "./component/Green/Green";
+import Siri from "./component/Siri/Siri";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -33,10 +35,9 @@ function App() {
           {...toolbarProps}
         />
         <div className="content" ref={divRef}>
-
-{value === "ingbank" && <Ingbank />}
-          
-     
+          {value === "ingbank" && <Ingbank />}
+          {value === "green" && <Green />}
+          {value === "siri" && <Siri />}
         </div>
         <div></div>
         <div></div>

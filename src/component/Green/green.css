@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.app__green {
+  width: 404px;
+  height: 800px;
+  background-color: #231f20;
+}
+
+.green__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 26px 0;
+}
+
+.gree__circle {
+  width: 55px;
+  height: 55px;
+  background-color: #02a903;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.green_content {
+  padding-top: 81px;
+  padding-left: 30px;
+  padding-bottom: 27px;
+}
+
+.green__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.green__text > h1 {
+  color: #fff;
+  font-size: 27.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.green__code {
+  color: #fff;
+  font-size: 19.7px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.green__receipt {
+  color: #d2cecf;
+  font-size: 19.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 23px;
+  padding-bottom: 22px;
+}
+
+.green__form {
+  padding-top: 44px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 31px;
+}
+
+.gree__from {
+  color: #fff;
+  font-size: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.gree__access {
+  padding-top: 8px;
+  color: #fff;
+  font-size: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.gree__number {
+  padding-top: 9px;
+  color: #dad6d7;
+  font-size: 19.7px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.__description {
+  padding-top: 23px;
+}
+
+.__transaction {
+  padding-top: 24px;
+}
+
+.trasaction_date {
+  color: #fff;
+  font-size: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.__time {
+  padding-top: 14px;
+}
+.trasaction_security {
+  color: #fff;
+  font-size: 19.3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.__payees {
+  padding-top: 29px;
+}
+
+.__osko {
+    display: flex;
+    align-items: baseline;
+    gap:24px;
+  padding-top: 10px;
+}
+.osko {
+  color: #fff;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap:3px
+}

@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.app__siri {
+  width: 369px;
+  height: 800px;
+  position: relative;
+  background-color: #231f20;
+}
+
+
+/* styling the header */
+
+.siri__top{ 
+    width: 333px;
+height: 9px;
+border-radius: 20px 20px 0px 0px;
+background: #2C2A2B;
+margin: auto;
+}
+.siri__header {
+  padding: 11px 23px;
+}
+.siri__time {
+  color: #fff;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.siri__subheader {
+  width: 369px;
+  height: 50px;
+  border-radius: 8px 8px 0px 0px;
+  background: #2c2a2b;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 0 26px;
+}
+
+.siri__receipt {
+  color: #fff;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.siri__share {
+  color: #fff;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* styling the content */
+
+.siri__content {
+  padding-top: 29px;
+  padding-left: 20px;
+}
+
+.content__circle {
+  width: 39px;
+  height: 41px;
+  background-color: #04a904;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.siri__paid {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.siri__paid > h1 {
+  color: #fff;
+  font-size: 18.4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.siri__number {
+  padding-top: 3px;
+  color: #dedcdd;
+  font-size: 13.7px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paid__receipt {
+  color: #c6c2c3;
+  font-size: 13.1px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 14px;
+}
+
+.siri__from {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.siri__title {
+  color: #fff;
+  font-size: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.siri__main {
+  color: #e1dfe0;
+  font-size: 13.1px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.siri__number {
+  color: #b9b5b6;
+  font-size: 13.7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* styling the description */
+
+.siri__description {
+  padding-top: 12px;
+}
+
+.siri__subdescription {
+  color: #e1dfe0;
+  font-size: 13.1px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.__trandate {
+  padding-top: 15px;
+}
+
+/* styling the security */
+
+.siri__security {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.siri__desc {
+  color: #e1dfe0;
+  font-size: 13.1px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sent {
+  color: #e1dfe0;
+  font-size: 13.1px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.siri__through {
+  display: flex;
+  gap: 6px;
+  padding-top: 15px;
+}
+
+.siri__add {
+  padding-top: 15px;
+  color: #e1dfe0;
+  font-size: 13.1px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo__siri {
+  padding-top: 14px;
+}
+
+.siri__lbar {
+  padding-top: 12px;
+}
+
+.siri__cashbak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cashbak {
+  padding-top: 22px;
+  color: #e1dfe0;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* styling the button */
+
+.siri__bottom {
+    display: grid;
+    place-items: center;
+  width: 327px;
+  height: 35px;
+  background-color: #ffcc01;
+  border-radius: 35px;
+  position: absolute;
+  bottom: 10px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.learn__more {
+  color: #4a2f00;
+  font-size: 13.7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
