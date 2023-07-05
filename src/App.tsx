@@ -39,7 +39,7 @@ function App() {
         />
         <div className="content" ref={divRef}>
           {value === "ingbank" && <Ingbank />}
-          {value === "green" && <Green />}
+          {value === "green" && <Green amount={amount} />}
           {value === "siri" && <Siri amount={amount} />}
           {value === "white" && <White />}
           {value === "westpack" && <Westpac />}
