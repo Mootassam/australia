@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.app__westpack {
+  width: 369px;
+  height: 800px;
+  background-color: #fff;
+}
+
+/* styling the header  */
+
+.westpack__header {
+  padding: 13px 0 23px 30px;
+}
+
+.westpack__time {
+  color: #000;
+  font-size: 14.3px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.westpack__subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 24px 10px;
+}
+
+/* sttling the westpakc content  */
+
+.westpack__content {
+  padding-left: 27px;
+}
+
+.payment__detail {
+  color: #000;
+  font-size: 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.payment__processing {
+  color: #000;
+  font-size: 14.7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.payement__amount {
+  padding-top: 15px;
+  color: #1e1d22;
+  font-size: 28.9px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.westpack__amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__time {
+  color: #616161;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.payment__carmen {
+  padding-top: 30px;
+  color: #000;
+  font-size: 14.7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.westpack__detail {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.number__westpack {
+  color: #000;
+  font-size: 15.5px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.choice__westpac {
+  color: #000;
+  font-size: 14.7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.refrence__westpac {
+  color: #777779;
+  font-size: 15.5px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* styling the content */
+
+.carmen__detaill {
+  padding-top: 29px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 29px;
+}
+
+.carmen {
+  color: #616161;
+  font-size: 12.7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.customer__name {
+  color: #000;
+  font-size: 14.7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.osko__ {
+  padding-top: 29px;
+  color: #616161;
+  font-size: 12.5px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.carmen__bottom{ 
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 7px ;
+
+  width: 131px;
+height: 4px;
+border-radius: 3px;
+background: #000;
+}

@@ -1,16 +1,55 @@
 import React from "react";
 import "./siri.css";
-function Siri() {
+
+import { IoIosWifi } from "react-icons/io";
+import Dates from "../../shared/dates";
+import Number from './../../shared/Number';
+
+function Siri(props) {
+
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#fff";
+    }
+
+    return background;
+  };
   return (
     <div className="app__siri">
       <div className="siri__header">
         <div className="siri__left">
-          <span className="siri__time">10:44</span>
+          <span className="siri__time">{Dates.currentTime()}</span>
         </div>
+        <div className="siri__right">
+          <div className="siri__data">
+            <div className="data__1"></div>
+            <div className="data__2"></div>
+            <div className="data__3"></div>
+            <div className="data__4"></div>
+          </div>
 
-        <div className="siri__right"></div>
+          <IoIosWifi size={18} color="white" />
+
+          <div className="battery__siri">
+            <div className="siri__battery">
+              <div className="siri__level"      style={{ width: `${limit}%`, background: CheckstatusBattery(), }}></div>
+            </div>
+            <div className="siri__border"></div>
+          </div>
+        </div>
       </div>
-
       <div className="siri__top"></div>
 
       <div className="siri__subheader">
@@ -25,20 +64,17 @@ function Siri() {
         <div className="content__circle">
           <img src="/Siri/check.png" alt="" width={16} />
         </div>
-
         <div className="siri__paid">
-          <h1>Paid $18,014.00</h1>
+          <h1>Paid {Number.formatAmountInAustralia(props.amount)}</h1>
           <h1>to Kane PICKLES</h1>
           <span className="siri__number">923100 312229073</span>
-          <span className="paid__receipt">Receipt no: N261838998850</span>
+          <span className="paid__receipt">Receipt no: N261838{Number.genrateRandom6Number()}</span>
         </div>
         <img src="/Siri/bar.png" alt="" />
-
         <div className="siri__from">
           <h1 className="siri__title">From</h1>
           <span className="siri__main"> Main</span>
-          <span className="siri__number">(063-250 1096 7851)</span>
-
+          <span className="siri__number">(063-250 {Number.generate4RandomNumber()} {Number.generate4RandomNumber()})</span>
           <div className="siri__description">
             <h1 className="siri__title">Description</h1>
             <span className="siri__subdescription">
@@ -49,7 +85,7 @@ function Siri() {
           <div className="siri__transactiondate __trandate">
             <h1 className="siri__title">Transaction Date</h1>
             <span className="siri__subdescription">
-              18 Jun 2023 10:44 PM (Syd/Melb time)
+             {Dates.getDatesiri()} (Syd/Melb time)
             </span>
           </div>
 

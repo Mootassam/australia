@@ -7,19 +7,59 @@
   background-color: #231f20;
 }
 
-
 /* styling the header */
 
-.siri__top{ 
-    width: 333px;
-height: 9px;
-border-radius: 20px 20px 0px 0px;
-background: #2C2A2B;
-margin: auto;
+/* styling the battery */
+.siri__right {
+  display: flex;
+  gap: 3px;
+  align-items: center;
 }
+
+.battery__siri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.siri__battery {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  width: 22px;
+  height: 11px;
+  border-radius: 2px;
+  border: 1.3px solid #706c6d;
+}
+
+.siri__level {
+  width: 9px;
+  height: 7px;
+  background: #fff;
+  border-radius: 1px;
+}
+
+.siri__border {
+  width: 1px;
+  height: 3px;
+  background: #706c6d;
+}
+
+.siri__top {
+  width: 333px;
+  height: 9px;
+  border-radius: 20px 20px 0px 0px;
+  background: #2c2a2b;
+  margin: auto;
+}
+
 .siri__header {
-  padding: 11px 23px;
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 19px 11px 23px;
 }
+
 .siri__time {
   color: #fff;
   font-size: 14px;
@@ -117,6 +157,7 @@ margin: auto;
   display: flex;
   flex-direction: column;
 }
+
 .siri__title {
   color: #fff;
   font-size: 15px;
@@ -232,8 +273,8 @@ margin: auto;
 /* styling the button */
 
 .siri__bottom {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
   width: 327px;
   height: 35px;
   background-color: #ffcc01;
@@ -252,4 +293,43 @@ margin: auto;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+
+.siri__data{ 
+    display: flex;
+    gap:1.3px;
+    align-items: baseline;
+}
+
+.data__1{ 
+
+    width: 2.4px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 0.6px 0.6px 0 0;
+
+}
+
+.data__2{ 
+  
+    width: 2.4px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 0.6px 0.6px 0 0;}
+
+.data__3{ 
+   
+    width: 2.4px;
+    height: 9px;
+    background-color: #514F50;
+    border-radius: 0.6px 0.6px 0 0;
+}
+
+.data__4{         
+    width: 2.4px;
+    height: 11px;
+    background-color: #514F50;
+    border-radius: 0.6px 0.6px 0 0;
+
 }

@@ -47,14 +47,18 @@ class Number {
     return item;
   }
 
-  static hongkong(amount) { 
+  static formatAmountInAustralia(amount) { 
     const exchangeRate = 1; // Replace with the actual exchange rate
-    const hkdAmount = amount * exchangeRate;
-    return hkdAmount.toLocaleString('en-HK', {
+    const audAmount = amount * exchangeRate;
+    return audAmount.toLocaleString('en-AU', {
       style: 'currency',
-      currency: 'HKD',
-    }).replace('HK$', '');
+      currency: 'AUD',
+    });
   }
+
+
+
+
 
   static hongkongstyle2(amount){ 
     const exchangeRate = 1; // Replace with the actual exchange rate
