@@ -17,7 +17,6 @@ function Left() {
   let instag = ExtractItem.getItem(instagram);
   let message = ExtractItem.getItem(Message);
   let wechat = <AiFillWechat  />
-  let alipay = <AiFillAlipayCircle size={13} />
   let tiktok = <FaTiktok size={11} />
   let snapchat = <RiSnapchatLine size={13} />
   let twitt = ExtractItem.getItem(twitter);
@@ -27,7 +26,6 @@ function Left() {
     instag,
     message,
     wechat,
-    alipay,
     twitt,
     snapchat,
     tiktok,

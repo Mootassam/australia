@@ -1,15 +1,55 @@
 import React from "react";
 import "./Ingbank.css";
+import Dates from "../../shared/dates";
+import Left from "../../shared/icons/Left";
+import { IoIosWifi } from "react-icons/io";
+import Number from "../../shared/Number";
 
-function Ingbank() {
+function Ingbank(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#fff";
+    }
+
+    return background;
+  };
   return (
     <div className="app__ingbank">
       <div className="ingbank__header">
         <div className="ingbattery">
           <div className="ingh__left">
-            <div className="ing__timeheader">10:47</div>
+            <div className="ing__timeheader">{Dates.currentTime()}
+            <Left />
+            </div>
           </div>
-          <div className="ing__right"></div>
+          <div className="ing__right">
+          <div className="siri__data">
+            <div className="data__1 "></div>
+            <div className="data__2"></div>
+            <div className="data__3 __ing"></div>
+            <div className="data__4"></div>
+          </div>
+
+          <IoIosWifi size={18} color="white" />
+          <div className="battery__siri">
+            <div className="siri__battery">
+              <div className="siri__level"      style={{ width: `${limit}%`, background: CheckstatusBattery(), }}></div>
+            </div>
+            <div className="siri__border"></div>
+          </div>
+          </div>
         </div>
 
         <div className="ingsubheader">
@@ -30,9 +70,7 @@ function Ingbank() {
         <div className="content__text">
           <div className="text__top">
             <span className="uncategorised">Uncategorised</span>
-
-            <span className="amount">-$18,014.00</span>
-
+            <span className="amount">-{Number.formatAmountInAustralia(props.amount)}</span>
             <span className="transfer__customer">Transfer to Kane Pickles</span>
           </div>
         </div>
@@ -46,16 +84,14 @@ function Ingbank() {
 
           <span>Bockers and Pony - Kongjamz</span>
         </div>
-
         <div className="text__bottom">
-          <span className="grey">Sun 18 Jun 2023</span>
-          <span className="grey">10:44 PM (Syd/Melb time)</span>
-
-          <span className="receipt__no">Receipt No: N261838998850</span>
+          <span className="grey">{Dates.getDateing()}</span>
+          <span className="grey">{Dates.ingtime()} (Syd/Melb time)</span>
+          <span className="receipt__no">Receipt No: N261838{Number.genrateRandom6Number()}</span>
         </div>
 
-        <div>
-          <img src="/ingbank/barr.png" alt="" className="bar" />
+        <div className="ingnew">
+          <img src="/ingbank/bar.png" alt="" className="bars" width={700} />
 
           <div className="uncat__content">
             <div className="uncat__left"> Uncategorised </div>
@@ -64,7 +100,7 @@ function Ingbank() {
               Change <img src="/ingbank/next.png" alt="" width={6.4} />{" "}
             </div>
           </div>
-          <img src="/ingbank/barr.png" alt="" className="bar" />
+          <img src="/ingbank/bar.png" alt="" className="bars" />
         </div>
       </div>
 

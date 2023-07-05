@@ -1,6 +1,5 @@
 import React from "react";
 import "./siri.css";
-
 import { IoIosWifi } from "react-icons/io";
 import Dates from "../../shared/dates";
 import Number from './../../shared/Number';

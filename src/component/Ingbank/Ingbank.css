@@ -7,6 +7,22 @@
     position: relative;
 }
 
+.ing__timeheader{ 
+    display: flex;
+    align-items: center;
+    gap:3px;
+}
+
+.ingbattery { 
+    display: flex;
+    justify-content: space-between;
+}
+.ing__right{ 
+    display: flex;
+    gap:3px;
+    align-items: center;
+}
+
 .ingbank__header {
     width: 369px;
     height: 78px;
@@ -155,6 +171,8 @@
     line-height: normal;
 }
 
+
+
 .grey {
     color: #d7d5d6;
     font-size: 12px;
@@ -182,6 +200,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
+    padding-left: 15px;
     line-height: normal;
 }
 
@@ -194,12 +213,16 @@
     line-height: normal;
     display: flex;
     align-items: center;
-    gap:9px
+    gap:9px;
+    padding-right: 17.6px ;
 }
 
-.bar {
- 
+.bars{ 
+
+   padding-right: 25px;
+  
 }
+
 
 /* syling the bottom of tht ing  banmck  */
 

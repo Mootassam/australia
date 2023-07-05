@@ -38,7 +38,7 @@ function App() {
           {...toolbarProps}
         />
         <div className="content" ref={divRef}>
-          {value === "ingbank" && <Ingbank />}
+          {value === "ingbank" && <Ingbank amount={amount}  />}
           {value === "green" && <Green amount={amount} />}
           {value === "siri" && <Siri amount={amount} />}
           {value === "white" && <White />}
