@@ -47,7 +47,7 @@ function White(props) {
 
           <IoIosWifi size={19} color="white" />
 
-          <div className="battery__siri">
+          {/* <div className="battery__siri">
             <div className="siri__battery">
               <div
                 className="siri__level"
@@ -55,6 +55,21 @@ function White(props) {
               ></div>
             </div>
             <div className="siri__border"></div>
+          </div> */}
+
+          <div className="orange__batt">
+            <div className="total__batt">
+              <div
+                className="total__level"
+                style={{
+                  width: `${limit}%`,
+                  backgroundColor: CheckstatusBattery(),
+                }}
+              ></div>
+              <span className="number__">{limit}</span>
+            </div>
+
+            <div className="border-bat"></div>
           </div>
         </div>
       </div>
@@ -127,7 +142,6 @@ function White(props) {
         </div>
 
         <img src="/white/barr.png" width={369} />
-
         <div className="white__bottom">
           <div className="wite__details">
             <span className="personal">

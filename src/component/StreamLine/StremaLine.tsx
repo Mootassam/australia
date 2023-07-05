@@ -48,7 +48,7 @@ function StremaLine(props) {
               {limit}%
             </label>
             <div className="streamline__batt">
-              <div className="batt__border"></div>
+              <div className="batt__borders"></div>
               <div className="batt">
                 <div className="streamline__level"       style={{ height: `${limit}%`, background: CheckstatusBattery() }} ></div>
               </div>

@@ -331,3 +331,35 @@ gap:3px
   background-color: #fff;;
 }
 
+
+/* 
+stlying the battery  */
+
+.white__batt { 
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap:1px
+
+
+}
+
+.batts{ 
+  width: 24px;
+height: 13px;
+border-radius: 4px;
+background: #979394;
+overflow: hidden;
+}
+
+.batt__level{ 
+  height: 100%;
+  width: 20%;
+  
+}
+.batt__borders{ 
+  width: 3px;
+  height: 1px;
+  background: #7D797A;
+}
