@@ -218,9 +218,7 @@
 }
 
 .bars{ 
-
    padding-right: 25px;
-  
 }
 
 
@@ -249,11 +247,10 @@
     display: flex;
     justify-content: space-between;
     width: 339px;
-    
 }
 
 .help__{ 
-    color: #D7D5D6;
+color: #D7D5D6;
 font-size: 13.5px;
 font-family: Inter;
 font-style: normal;

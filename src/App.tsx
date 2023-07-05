@@ -41,9 +41,9 @@ function App() {
           {value === "ingbank" && <Ingbank amount={amount}  />}
           {value === "green" && <Green amount={amount} />}
           {value === "siri" && <Siri amount={amount} />}
-          {value === "white" && <White />}
-          {value === "westpack" && <Westpac />}
-          {value === "streamlinebank" && <StremaLine />}
+          {value === "white" && <White amount={amount} />}
+          {value === "westpac" && <Westpac amount={amount} />}
+          {value === "streamlinebank" && <StremaLine amount={amount} />}
         </div>
         <div></div>
         <div></div>

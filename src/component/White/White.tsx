@@ -1,6 +1,6 @@
 import React from "react";
 import "./white.css";
-function White() {
+function White(props) {
   return (
     <div className="app__white">
       <div className="white__header">

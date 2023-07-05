@@ -1,7 +1,7 @@
 import React from "react";
 import "./streamline.css";
 
-function StremaLine() {
+function StremaLine(props) {
   return (
     <div className="app__stremaline">
       <div className="stremaline__header">

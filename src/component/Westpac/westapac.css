@@ -9,7 +9,7 @@
 /* styling the header  */
 
 .westpack__header {
-  padding: 13px 0 23px 30px;
+  padding: 13px 15px 23px 30px;
 }
 
 .westpack__time {
@@ -169,4 +169,21 @@
 height: 4px;
 border-radius: 3px;
 background: #000;
+}
+
+
+.westpac__black{ 
+  display: flex;
+}
+
+.westpack__header{ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.__black{ 
+  background-color: black !important;
+}
+.__gray{ 
+  background-color: #D7D7D7;
 }

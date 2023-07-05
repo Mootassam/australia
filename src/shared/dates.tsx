@@ -31,6 +31,12 @@ return formattedTime
     return currentDate;
   }
 
+  static getwhitespec(){ 
+    const date = moment().format('ddd DD MMM YYYY');
+    return date
+
+  }
+
 
 
 }
