@@ -4,9 +4,12 @@
   background-color: #fff;
 }
 
-
-
-
+.stremaline__left{ 
+color: #fff;
+align-items: center;
+display: flex;
+gap:3px
+}
 
 
 
@@ -113,13 +116,14 @@
 .__bill {
   padding-bottom: 7px;
 }
-.bill { 
+
+.bill {
   color: #000;
-font-size: 13.6px;
-font-family: Inter;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-size: 13.6px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .from__stremaline__title {
@@ -129,7 +133,6 @@ line-height: normal;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-
 }
 
 .__spec {
@@ -162,7 +165,6 @@ line-height: normal;
   padding-top: 19px;
   display: flex;
   flex-direction: column;
-
 }
 
 .from__date {
@@ -173,7 +175,6 @@ line-height: normal;
   font-weight: 400;
   line-height: normal;
 }
-
 
 .text__security {
   color: #000;
@@ -207,7 +208,7 @@ line-height: normal;
   margin-top: 50px;
   width: 100%;
   height: 7px;
-  background: #F4F4F4
+  background: #f4f4f4;
 }
 
 .__text__bottom {
@@ -217,22 +218,116 @@ line-height: normal;
   flex-direction: column;
 }
 
-.__text__bottom>span {
-
+.__text__bottom > span {
   color: #000;
   font-size: 15.9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
 }
-
 
 .stremaline__bottom {
   margin-top: 15px;
   width: 100%;
   height: 48px;
-  background-color: #F2F2F2;
-  ;
+  background-color: #f2f2f2;
+  display: grid;
+  place-items: center;
 }
+
+.stremaline__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 14px 3px 15px;
+}
+
+.time__st {
+  color: #fff;
+  font-size: 13px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.number__battery {
+  color: #fff;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.str__right {
+  display: flex;
+  align-items: center;
+  gap:4px
+}
+
+.stremaline__battery {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.streamline__batt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.batt__border {
+  width: 3px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.batt {
+  width: 7px;
+  height: 9px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #b8b6b7;
+}
+
+.streamline__level {
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+}
+
+/* styling the data on the mobile  */
+
+.str__data {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.str__1 {
+  width: 1.3px;
+  height: 2px;
+  background-color: #fff;;
+}
+
+.str__2 {
+  width: 1.3px;
+  height: 4px;
+  background-color: #fff;;
+}
+
+.str__3 {
+  width: 1.3px;
+  height: 7px;
+  background-color: #fff;;
+}
+
+.str__4 {
+  width: 1.3px;
+  height: 10px;
+  background-color: #fff;;
+}
+

@@ -9,9 +9,45 @@
 /* styling the header  */
 
 .white__header {
-  padding: 15px 0 11px 46px;
+  padding: 15px 26px 11px 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.white__data{ 
+
+  display: flex;
+  align-items: flex-end;
+  gap:1.8px
 }
 
+.white__1{
+  width: 2.6px;
+  background-color: #fff;
+  height: 3px;
+  border-radius: 1px;
+
+}
+.white__2{ 
+  width: 2.6px;
+  background-color: #fff;
+  height: 5px;
+  border-radius: 1px;
+}
+.white__3{ 
+  width: 2.6px;
+  background-color: #fff;
+  height: 8px;
+  border-radius: 1px;
+}
+.white__4{ 
+
+  width: 2.6px;
+  background-color: #575354;
+  height: 11px;
+  border-radius: 1px;
+
+}
 .time__white {
   color: #fbf7f8;
   font-size: 16px;
@@ -289,3 +325,6 @@ line-height: normal;
   flex-direction: column;
   padding-left: 17px;
 }
+
+
+

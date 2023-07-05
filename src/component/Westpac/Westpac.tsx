@@ -34,9 +34,7 @@ function Westpac(props) {
         <div className="westpack">
           <span className="westpack__time">{Dates.currentTime()}</span>
         </div>
-
         <div className="westpac__black">
-
         <div className="siri__right">
           <div className="siri__data">
             <div className="data__1 __black"></div>

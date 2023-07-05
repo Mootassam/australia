@@ -1,11 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./white.css";
+import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
+import { IoIosWifi } from "react-icons/io";
 function White(props) {
+  const [first, setfirst] = useState(Number.generateRandom4Number());
+
+  const [second, setsecond] = useState(Number.generateRandom4Number());
+  useEffect(() => {
+    first;
+  }, [first]);
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#fff";
+    }
+
+    return background;
+  };
+
   return (
     <div className="app__white">
       <div className="white__header">
         <div className="subheader__time">
-          <span className="time__white">9:11</span>
+          <span className="time__white">{Dates.currentTime()}</span>
+        </div>
+
+        <div className="siri__right">
+          <div className="white__data">
+            <div className="white__1"></div>
+            <div className="white__2"></div>
+            <div className="white__3"></div>
+            <div className="white__4"></div>
+          </div>
+
+          <IoIosWifi size={19} color="white" />
+
+          <div className="battery__siri">
+            <div className="siri__battery">
+              <div
+                className="siri__level"
+                style={{ width: `${limit}%`, background: CheckstatusBattery() }}
+              ></div>
+            </div>
+            <div className="siri__border"></div>
+          </div>
         </div>
       </div>
 
@@ -25,28 +75,34 @@ function White(props) {
           </div>
         </div>
         <div className="white__paid">
-          <h1>Paid $294.48</h1>
+          <h1>Paid {Number.formatAmountInAustralia(props.amount)}</h1>
           <h1>to kane pickles</h1>
           <span className="white__numbers">633123 205142995</span>
-          <span className="__receipt__number">Receipt no: N261837226681</span>
+          <span className="__receipt__number">
+            Receipt no: N261837{Number.genrateRandom6Number()}
+          </span>
         </div>
         <img src="/white/bar.png" alt="" className="bar" />
 
         <div className="from__styling __first">
           <h1 className="white__from">From</h1>
           <span className="smart__access"> Smart Access</span>
-          <span className="from__number">(063-241 1091 9123)</span>
+          <span className="from__number">
+            (063-241 {second} {first})
+          </span>
         </div>
 
         <div className="from__styling __desc">
           <h1 className="white__from">Description</h1>
-          <span className="description__number">(063-241 1091 9123)</span>
+          <span className="description__number">
+            (063-241 {second} {first})
+          </span>
         </div>
 
         <div className="from__styling __desc">
           <h1 className="white__from">Transaction Date</h1>
           <span className="tran__date">
-            18 Jun 2023 09:11 PM (Syd/Melb time)
+            {Dates.getDatesiri()} (Syd/Melb time)
           </span>
         </div>
 
@@ -73,18 +129,16 @@ function White(props) {
         <img src="/white/barr.png" width={369} />
 
         <div className="white__bottom">
-        <div className="wite__details">
-          <span className="personal">
-            Personal Loans: borrow from $4,000 to
-          </span>
-          <span className="personal">$50,000.</span>
+          <div className="wite__details">
+            <span className="personal">
+              Personal Loans: borrow from $4,000 to
+            </span>
+            <span className="personal">$50,000.</span>
+          </div>
+
+          <div className="white__phone"></div>
         </div>
-
-        <div className="white__phone"></div>
       </div>
-      </div>
-
-      
     </div>
   );
 }

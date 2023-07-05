@@ -6,11 +6,9 @@ const optionBank = [
     value: "ingbank",
   },
   { name: "westpac", value: "westpac" },
-  { name: "Osko", value: "osko" },
-  
   { name: "white", value: "white" },
-
   { name: "Stremlinebank", value: "streamlinebank" },
+  { name: "Osko", value: "osko" },
 ];
 
 export default optionBank;
