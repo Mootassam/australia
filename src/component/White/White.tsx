@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./white.css";
+import "./style.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import { IoIosWifi, IoLogoGoogle } from "react-icons/io";
