@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.app__italo {
+    width: 369px;
+    height: 800px;
+    background-color: #1a1a23;
+    position: relative;
+}
+
+.italo__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 13px 16px 26px 27px;
+}
+
+.italo__time {
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.italo__name {
+    color: #fff;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.italo__data {
+    display: flex;
+    gap: 1.8px;
+    align-items: baseline;
+}
+
+.italo__1 {
+    width: 2.8px;
+    height: 3px;
+    border-radius: 1px;
+    background: #fff;
+}
+
+.italo__2 {
+    width: 2.8px;
+    height: 5px;
+    border-radius: 1px;
+    background: #fff;
+}
+
+.italo__3 {
+    width: 2.8px;
+    height: 7px;
+    border-radius: 1px;
+    background: #fff;
+}
+
+.italo__4 {
+    width: 2.8px;
+    height: 9px;
+    border-radius: 1px;
+    background: #fff;
+}
+
+.italo__right {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.italo__battery {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.italo__batt {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    width: 22px;
+    height: 11px;
+    border-radius: 3px;
+    border: 1px solid #3d3b47;
+}
+
+.italo__level {
+    width: 17px;
+    height: 7px;
+    border-radius: 1px;
+    background: #fff;
+}
+
+.italo__border {
+    width: 1px;
+    height: 3px;
+    background-color: #5f5f68;
+    border-radius: 1px;
+}
+
+.italo__subheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13px;
+}
+
+.italo__payment {
+    color: #fff;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.italo__content {
+    width: 343px;
+    background-color: #fff;
+    height: 385px;
+    margin: auto;
+    margin-top: 11px !important;
+    border-radius: 3px;
+}
+
+.italo__first {
+    padding: 17px 15px 0 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.first__circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: grid;
+    place-items: center;
+}
+
+.first__circle>span {
+    color: #1a1922;
+    font-family: Inter;
+    font-size: 11.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.carsello {
+    color: #000;
+    font-family: Inter;
+    font-size: 13.7px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.first__right>span {
+    color: #201f28;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* styling thee insights and the cover and the slice section */
+
+.italo__insights {
+    width: 343px;
+    height: 48px;
+    border-radius: 3px;
+    background: #fbfbfb;
+    margin: auto;
+    margin-top: 9px;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+}
+
+.insights {
+    color: #000;
+    font-family: Inter;
+    font-size: 10.6px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.italo__image {
+    display: flex;
+    gap: 10px;
+    padding-right: 39px;
+
+}
+
+.period__amount {
+    color: #000;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.period__month {
+    color: #7c7c7c;
+    font-family: Inter;
+    font-size: 9.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.payment__period {
+    display: flex;
+    flex-direction: column;
+    padding-right: 21px;
+    gap: 2px
+}
+
+.italo__cover {
+    margin: auto;
+    margin-top: 9px;
+    width: 341px;
+    height: 44px;
+    border-radius: 2px;
+    background: #25252e;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+
+    gap: 10px;
+}
+
+.italo__slice {
+    margin: auto;
+    margin-top: 1.7px;
+    width: 341px;
+    height: 44px;
+    border-radius: 2px;
+    background: #25252e;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    gap: 10px;
+}
+
+.italo__slice>span {
+    color: #d37169;
+    font-family: Inter;
+    font-size: 11.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+}
+
+/* styling the footer of italo */
+
+.italo__bottom {
+    position: absolute;
+    bottom: 8px;
+    margin: auto;
+    width: 131px;
+    height: 4px;
+    border-radius: 90px;
+    background: #fff;
+    left: 0;
+    right: 0;
+}
+
+.italo__cover>span {
+    color: #d37169;
+    font-family: Inter;
+    font-size: 11.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+}
+
+
+.italo__ {
+    margin: auto;
+    display: flex;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 17.5px 14px 0;
+
+}
+
+.italo__number {
+    color: #757577;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15.5px 0;
+
+}
+
+.osko__text {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    color: #88888A;
+    font-family: Inter;
+    font-size: 11.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sent__text {
+    color: #7D7D7F;
+    font-family: Inter;
+    font-size: 11.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sent__detaill {
+    color: #201F28;
+    font-family: Inter;
+    font-size: 11.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.detaill__sent {
+    padding-top: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payid__detail {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paid__detaill {
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paid__text {
+    color: #201F28;
+    font-family: Inter;
+    font-size: 11.7px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.payment__number {
+    color: #201F28;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.paymentid__detaill {
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+}
+
+.add__category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 14px;
+
+}
+
+.italo__category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #7D7D7F;
+    font-family: Inter;
+    font-size: 11.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
+}
+
+.bar__italio {
+    display: flex;
+}

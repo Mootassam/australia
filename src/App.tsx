@@ -11,6 +11,7 @@ import White from "./component/White/White";
 import Westpac from "./component/Westpac/Westpac";
 import StremaLine from "./component/StreamLine/StremaLine";
 import Copy from "./component/Copy/Copy";
+import Italo from "./component/Italo/Italo";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -69,6 +70,8 @@ function App() {
           {value === "westpac" && <Westpac amount={amount} />}
           {value === "streamlinebank" && <StremaLine amount={amount} />}
           {value === "copy" && <Copy amount={amount} />}
+
+          {value === 'italo' && <Italo />} 
           </div>
         <div></div>
         <div></div>

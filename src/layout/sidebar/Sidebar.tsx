@@ -20,6 +20,8 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
 
 
 
+
+
   return (
     <div className="app__sidebar">
       <div className="sidebar__form">
