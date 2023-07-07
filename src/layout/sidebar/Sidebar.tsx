@@ -1,7 +1,18 @@
 import React, { useEffect } from "react";
 import "./sidebar.css";
 import optionBank from "../../data/OptionBank";
-function Sidebar({ screenshot, value, setvalue, setAmount
+import { FaEraser, FaUndo } from "react-icons/fa";
+
+function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
+  , undo,
+  erase,
+  color,
+  changeColor,
+  brushSize,
+  changeBrushSize,
+  clear
+
+
 }) {
   useEffect(() => {
     let data;
@@ -32,6 +43,30 @@ function Sidebar({ screenshot, value, setvalue, setAmount
             onChange={(e) => setAmount(e.target.value)}
             maxLength={7}
           />
+        </div>
+        
+        <div className="form__group">
+          <label htmlFor="">Tools</label>
+          <div className="app__tools">
+            <input type="color" value={color} onChange={changeColor} className="btn--color" />
+            <button className="undo" onClick={undo}>
+              <FaUndo />
+            </button>
+            <button onClick={erase} className="erase__button">
+              <FaEraser />
+            </button>
+          </div>
+        </div>
+        <div className="form__group">
+          <label htmlFor="">Brush Size</label>
+          <input
+            type="range"
+            min="1"
+            max="70"
+            value={brushSize}
+            onChange={changeBrushSize}
+          />
+          <button onClick={clear} className="clear__button">Clear</button>
         </div>
     
     

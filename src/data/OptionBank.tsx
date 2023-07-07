@@ -8,6 +8,7 @@ const optionBank = [
   { name: "westpac", value: "westpac" },
   { name: "white", value: "white" },
   { name: "Stremlinebank", value: "streamlinebank" },
+  {name :"copy payment", value :"copy"}
  
 ];
 

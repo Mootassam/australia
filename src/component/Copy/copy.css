@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.app__copy {
+    width: 369px;
+    height: 800px;
+    background-color: #fff;
+}
+
+.copy__header {
+    padding: 16px 32px 22px 50px;
+}
+
+/* styling the header */
+
+.copy__time {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.copy__subheader {
+    padding: 0 19px 0 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.__moreraduis {
+    border-radius: 3.3px !important;
+}
+
+.__morespace { 
+    display: flex;
+    gap : 2px !important
+}
+
+.__raduis{ 
+    border-radius: 2px;
+}
+
+/* stlying the button */
+
+.app__bottom {
+    position: absolute;
+    bottom: 7px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    gap: 22px;
+}
+
+.copy__button {
+    width: 341px;
+    height: 41px;
+    border-radius: 3px;
+    background: #d91610;
+    display: grid;
+    place-items: center;
+}
+
+.copy__border {
+    width: 133px;
+    height: 4px;
+    border-radius: 6px;
+    background: #000;
+}
+
+.copy__button>span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 13.9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* 
+styling the copy content */
+
+.copy__content {
+    padding-top: 30px;
+    padding-left: 27px;
+}
+
+.copy__circle {
+    width: 47px;
+    height: 47px;
+    background-color: #595667;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.copy__circle>span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.copy__text {
+    padding-top: 8px;
+}
+
+.copy__text>h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 22.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.copy__text>span {
+    color: #000;
+    font-family: Inter;
+    font-size: 16.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.copy__amount {
+    padding-top: 36px;
+}
+
+.style__amount {
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.style__description {
+    color: #67666b;
+    font-family: Inter;
+    font-size: 12.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.copy__description {
+    padding-top: 31px;
+}
+
+
+.description__titles {
+    color: #000;
+    font-family: "Inter";
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.description__number {
+    color: #717075;
+    font-family: Inter;
+    font-size: 14.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.__description__ {
+    padding-top: 14px;
+
+}
+
+.payement__id {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.payment__title {
+    color: #717075;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.payment__method {
+    padding-top: 4px;
+    color: #000;
+    font-family: Inter;
+    font-size: 14.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.payement__method {
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment__submitted {
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submitted__title {
+    padding-top: 2px;
+    color: #000;
+    font-family: Inter;
+    font-size: 14.3px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.payment__date {
+    color: #000;
+    font-family: Inter;
+    font-size: 14.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.copy__right{ 
+    display: flex;
+    align-items: center;
+    gap:3.1px
+}
+.copy__header { 
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}

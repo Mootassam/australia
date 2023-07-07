@@ -10,6 +10,7 @@ import Siri from "./component/Siri/Siri";
 import White from "./component/White/White";
 import Westpac from "./component/Westpac/Westpac";
 import StremaLine from "./component/StreamLine/StremaLine";
+import Copy from "./component/Copy/Copy";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -38,13 +39,37 @@ function App() {
           {...toolbarProps}
         />
         <div className="content" ref={divRef}>
+          <div className="app__canvas">
+            {value === "BankChina" ? (
+              <canvas
+                ref={canvasRef as any}
+                width={384}
+                height={801}
+                style={{ cursor }}
+                onMouseDown={startDrawing}
+                onMouseMove={draw}
+                onMouseUp={endDrawing}
+              />
+            ) : (
+              <canvas
+                ref={canvasRef as any}
+                width={360}
+                height={820}
+                style={{ cursor }}
+                onMouseDown={startDrawing}
+                onMouseMove={draw}
+                onMouseUp={endDrawing}
+              />
+            )}
+          </div>
           {value === "ingbank" && <Ingbank amount={amount}  />}
           {value === "green" && <Green amount={amount} />}
           {value === "siri" && <Siri amount={amount} />}
           {value === "white" && <White amount={amount} />}
           {value === "westpac" && <Westpac amount={amount} />}
           {value === "streamlinebank" && <StremaLine amount={amount} />}
-        </div>
+          {value === "copy" && <Copy amount={amount} />}
+          </div>
         <div></div>
         <div></div>
       </div>
