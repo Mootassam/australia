@@ -60,6 +60,19 @@ class Names {
     return {fullName};
   };
 
+  static generateRandomEmail() {
+    const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    let email = '';
+  
+    for (let i = 0; i < 3; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      email += characters.charAt(randomIndex);
+    }
+  
+    email += '@hotmail.com';
+    return email;
+  }
+
   static generateRandomSignal() {
     const texts = ["4G", "5G", "LTE"];
     const randomIndex = Math.floor(Math.random() * texts.length);

@@ -34,6 +34,9 @@ function Italo(props) {
 
   const [secondCaracter, setSecondCaracter] = useState(text.charAt(0));
 
+  const [email, setEmail]=useState("") ;
+
+  const all =Fullname.split(" ").join("");
   return (
     <div className="app__italo">
       <div className="italo__header">
@@ -108,7 +111,7 @@ function Italo(props) {
                 PayID
               </label>
               <label htmlFor="" className="sent__detaill">
-                italo888@hotmail.com
+              {all}{Names.generateRandomEmail()}
               </label>
             </div>
             <div className="paid__detaill">
