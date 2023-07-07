@@ -38,9 +38,14 @@ class Dates {
     return date;
   }
 
-  static fulldatecopy(){ 
-    const date = moment().format('h:mmA ddd D MMM YYYY');
-    return date
+  static fulldatecopy() {
+    const date = moment().format("h:mmA ddd D MMM YYYY");
+    return date;
+  }
+
+  static italodate() {
+    const formattedDate = moment().format("D MMM h:mma");
+    return formattedDate;
   }
 }
 

@@ -1,14 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Italo.css";
 
 import { AiOutlineTags } from "react-icons/ai";
+import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
+import Names from "../../shared/Names";
 
-function Italo() {
+function Italo(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#fff";
+    }
+
+    return background;
+  };
+
+  const [Fullname, setfirst] = useState(Names.generateRandomNamesAustralia());
+  const [firstCaracter, setfirstCaracter] = useState(Fullname.charAt(0));
+
+  const text = Fullname.slice(Fullname.lastIndexOf(" ") + 1);
+
+  const [secondCaracter, setSecondCaracter] = useState(text.charAt(0));
+
   return (
     <div className="app__italo">
       <div className="italo__header">
         <div className="italo__left">
-          <span className="italo__time">14:23</span>
+          <span className="italo__time">{Dates.currentTime()}</span>
         </div>
         <div className="italo__right">
           <div className="italo__data">
@@ -20,13 +50,18 @@ function Italo() {
           <div className="italo__name">4G</div>
           <div className="italo__battery">
             <div className="italo__batt">
-              <div className="italo__level"></div>
+              <div
+                className="italo__level"
+                style={{
+                  width: `${limit}%`,
+                  backgroundColor: CheckstatusBattery(),
+                }}
+              ></div>
             </div>
             <div className="italo__border"></div>
           </div>
         </div>
       </div>
-
       <div className="italo__subheader">
         <div>
           <img src="Italo/whiteback.png" alt="" width={9} />
@@ -40,13 +75,12 @@ function Italo() {
         <div className="italo__first">
           <div className="first__left">
             <div className="first__circle">
-              <span>IC</span>
+              <span>{firstCaracter}{secondCaracter}</span>
             </div>
-            <label className="carsello">ltalo Corsello</label>
+            <label className="carsello">{Fullname}</label>
           </div>
-
           <div className="first__right">
-            <span>$50</span>
+            <span>{Number.formatAmountInAustralia(props.amount)}</span>
           </div>
         </div>
 
@@ -66,7 +100,7 @@ function Italo() {
                 sent
               </label>
               <label htmlFor="" className="sent__detaill">
-                6 Jul 2:23pm
+                {Dates.italodate()}
               </label>
             </div>
             <div className="payid__detail">
@@ -90,7 +124,7 @@ function Italo() {
                 Payment ID
               </label>
               <label htmlFor="" className="payment__number">
-                6 Jul 2:23pm
+                136{Number.genrateRandom6Number()}
               </label>
             </div>
             <div className="bar__italio">
@@ -98,11 +132,9 @@ function Italo() {
             </div>
             <div className="add__category">
               <span className="italo__category">
-                
-                <img src="/Italo/add.png" alt=""  width={9} />
-                
-                
-                Add category</span>
+                <img src="/Italo/add.png" alt="" width={9} />
+                Add category
+              </span>
               <img src="/Italo/next.png" alt="" width={8} />
             </div>
             <div className="bar__italio">
@@ -110,10 +142,9 @@ function Italo() {
             </div>
             <div className="add__category">
               <span className="italo__category">
-                
                 <AiOutlineTags color="B2B2B2" />
-                
-                Add tags</span>
+                Add tags
+              </span>
               <img src="/Italo/next.png" alt="" width={8} />
             </div>
             <div></div>
@@ -130,7 +161,7 @@ function Italo() {
         <div className="payment__period">
           <label htmlFor="" className="period__amount">
             {" "}
-            $50
+            {Number.formatAmountInAustralia(props.amount)}
           </label>
           <label htmlFor="" className="period__month">
             This month
@@ -139,21 +170,19 @@ function Italo() {
 
         <div className="payment__period">
           <label htmlFor="" className="period__amount">
-            {" "}
-            $50
+            {Number.formatAmountInAustralia(props.amount)}
           </label>
           <label htmlFor="" className="period__month">
-            This month
+            This year
           </label>
         </div>
 
         <div className="payment__period">
           <label htmlFor="" className="period__amount">
-            {" "}
-            $50
+            {Number.formatAmountInAustralia(props.amount)}
           </label>
           <label htmlFor="" className="period__month">
-            This month
+            All time
           </label>
         </div>
       </div>

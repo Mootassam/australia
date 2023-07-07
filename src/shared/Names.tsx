@@ -1,49 +1,15 @@
 class Names {
-  static generateRandomFullNameFromHongKong() {
+  static generateRandomNamesAustralia() {
     const surnames = [
-      "Chan",
-      "Cheung",
-      "Cheng",
-      "Fong",
-      "Ho",
-      "Kwok",
-      "Lam",
-      "Lee",
-      "Leung",
-      "Li",
-      "Lui",
-      "Ng",
-      "Poon",
-      "Tam",
-      "Wong",
-      "Yip",
-      "Yu",
+      'Oliver', 'Charlotte', 'Noah', 'Ava', 'William', 'Amelia', 'Jack', 'Mia', 'Thomas', 'Isla',
+      'Lucas', 'Olivia', 'James', 'Harper', 'Ethan', 'Ella', 'Liam', 'Grace', 'Henry', 'Emily',
+      'Alexander', 'Sophia', 'Samuel', 'Chloe', 'Benjamin', 'Lily', 'Max', 'Zoe', 'Leo', 'Maddison'
     ];
-
+  
     const givenNames = [
-      "Amy",
-      "Benjamin",
-      "Catherine",
-      "David",
-      "Eva",
-      "Frank",
-      "Grace",
-      "Henry",
-      "Ivy",
-      "Jason",
-      "Karen",
-      "Louis",
-      "Michelle",
-      "Nancy",
-      "Oscar",
-      "Peggy",
-      "Roger",
-      "Sandy",
-      "Tommy",
-      "Vivian",
-      "William",
-      "Yvonne",
-      "Zoe",
+      'Smith', 'Jones', 'Williams', 'Brown', 'Wilson', 'Taylor', 'Johnson', 'White', 'Martin', 'Anderson',
+      'Thompson', 'Nguyen', 'Thomas', 'Walker', 'Harris', 'Lee', 'Ryan', 'Robinson', 'Kelly', 'Davis',
+      'Evans', 'King', 'Wright', 'Turner', 'Green', 'Edwards', 'Baker', 'Hill', 'Cooper', 'Moore'
     ];
 
     const randomSurnameIndex = Math.floor(Math.random() * surnames.length);
@@ -56,10 +22,7 @@ class Names {
     return fullName;
   }
 
-  static extractFirstTwocharacters(){ 
-    let str  =this.generateRandomFullName()
-    return str.substring(0, 2);
-  }
+ 
 
   static generateRandomFullName = () => {
     const firstNames = [
@@ -90,20 +53,11 @@ class Names {
     const firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
     const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
 
-    const numAsterisks = Math.floor(Math.random() * 4) + 1; // Generate a random number between 1 and 6
-    const num2Asterisks = Math.floor(Math.random() * 4) + 1; // Generate a random number between 1 and 6
 
-    const abbreviatedFirstName =
-      firstName.slice(0, 1) + "*".repeat(numAsterisks);
-    const abbreviatedLastName =
-      lastName.slice(0, 1) + "*".repeat(num2Asterisks);
+    const fullName =`${firstName} ${lastName}`
+ 
 
-    const fullName =
-      Math.random() < 0.5
-        ? `${firstName} ${lastName}`
-        : ` YU ${abbreviatedLastName} ${abbreviatedFirstName}`;
-
-    return fullName;
+    return {fullName};
   };
 
   static generateRandomSignal() {

@@ -71,7 +71,7 @@ function App() {
           {value === "streamlinebank" && <StremaLine amount={amount} />}
           {value === "copy" && <Copy amount={amount} />}
 
-          {value === 'italo' && <Italo />} 
+          {value === 'italo' && <Italo amount={amount} />} 
           </div>
         <div></div>
         <div></div>
